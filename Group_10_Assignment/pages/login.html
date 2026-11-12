@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | IT Help Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">IT Help Desk</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="auth">
+      <div class="card auth-card">
+        <h1>Sign In</h1>
+        <p class="muted">Access the IT Help Desk portal</p>
+        <form action="user-dashboard.html" method="get" class="form">
+          <fieldset class="role-select">
+            <legend>Select Role</legend>
+            <label><input type="radio" name="role" value="user" checked> User</label>
+            <label><input type="radio" name="role" value="tech"> Technician</label>
+            <label><input type="radio" name="role" value="admin"> Admin</label>
+          </fieldset>
+          <div class="field">
+            <label for="email">Email or Username</label>
+            <input id="email" type="text" placeholder="name@school.mw" required value="grace.banda@school.mw">
+          </div>
+          <div class="field">
+            <label for="pw">Password</label>
+            <input id="pw" type="password" placeholder="••••••••" required value="password123">
+          </div>
+          <div class="field-row">
+            <label class="check"><input type="checkbox" checked> Remember me</label>
+            <a href="login.html">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          <p class="demo-links">
+            Direct Access:
+            <a href="user-dashboard.html">User Dashboard</a> &middot;
+            <a href="technician-dashboard.html">Technician</a> &middot;
+            <a href="admin-dashboard.html">Administrator</a>
+          </p>
+        </form>
+        <p class="auth-foot">Don't have an account? <a href="register.html">Register here</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
