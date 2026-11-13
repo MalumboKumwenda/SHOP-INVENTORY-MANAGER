@@ -31,4 +31,3 @@ A web based IT Help Desk for an organisation (school, office or lab). Stuff, Stu
 Open `index.html` (or `pages/index.html`) in any modern web browser. No server or installation is needed. On the login page use the demo links to reach each dashboard.
 
 
-
