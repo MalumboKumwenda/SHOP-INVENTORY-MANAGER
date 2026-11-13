@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket HD-1003 | IT Help Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">IT Help Desk</a>
+      <nav class="nav">
+        <a href="technician-dashboard.html">Dashboard</a>
+        <a href="tickets.html">All Tickets</a>
+        <a href="login.html" class="logout">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container page narrow">
+      <div class="page-head">
+        <div>
+          <a href="technician-dashboard.html" class="back">&larr; Back to Dashboard</a>
+          <h1>HD-1003 &middot; No Wi-Fi in Lab 3</h1>
+          <p class="muted">Submitted 2026-11-08 by Mary Chirwa &middot; Last updated 2026-11-11</p>
+        </div>
+        <span class="badge badge-in-progress badge-lg">In Progress</span>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Ticket Information</h2>
+        <dl class="details">
+          <div>
+            <dt>Ticket ID</dt>
+            <dd>HD-1003</dd>
+          </div>
+          <div>
+            <dt>Requester</dt>
+            <dd>Mary Chirwa (Computer Science)</dd>
+          </div>
+          <div>
+            <dt>Category</dt>
+            <dd>Network & Connectivity</dd>
+          </div>
+          <div>
+            <dt>Priority Level</dt>
+            <dd><span class="prio prio-critical">Critical</span></dd>
+          </div>
+          <div>
+            <dt>Device / Equipment</dt>
+            <dd>Access Point (NW-AP-03)</dd>
+          </div>
+          <div>
+            <dt>Assigned Technician</dt>
+            <dd>Esther Kumwenda</dd>
+          </div>
+        </dl>
+        <h3 class="sub">Problem Description</h3>
+        <p>None of the 30 computers in Computer Science Lab 3 can connect to the institutional Wi-Fi since Monday
+          morning. The access point status light is blinking amber. Practical classes and scheduled lab assessments are
+          currently affected.</p>
+        <h3 class="sub">Technician Solution / Resolution Progress</h3>
+        <div class="solution">
+          Diagnostic test confirmed access point firmware corruption following Sunday's power fluctuation. Replacement
+          Cisco AP unit requisitioned; temporary 24-port Gigabit switch installed to restore wired internet access for
+          15 primary lab workstations.
+        </div>
+      </div>
+      <div class="card" id="update">
+        <h2 class="card-title">Update Ticket Status & Assignment</h2>
+        <form action="technician-dashboard.html" method="get" class="form">
+          <div class="grid-2">
+            <div class="field">
+              <label for="st">Current Status</label>
+              <select id="st">
+                <option>Pending</option>
+                <option>Assigned</option>
+                <option selected>In Progress</option>
+                <option>Resolved</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="te">Assign Technician</label>
+              <select id="te">
+                <option>Peter Mwale</option>
+                <option selected>Esther Kumwenda</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="sl">Solution Notes / Progress Log</label>
+            <textarea id="sl"
+              rows="4">Diagnostic test confirmed access point firmware corruption. Replacement unit requisitioned; temporary switch deployed.</textarea>
+          </div>
+          <div class="form-actions">
+            <a href="edit-ticket.html" class="btn btn-outline">Edit Form</a>
+            <a href="technician-dashboard.html" class="btn btn-danger">Delete Ticket</a>
+            <button type="submit" class="btn btn-primary">Update Status</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

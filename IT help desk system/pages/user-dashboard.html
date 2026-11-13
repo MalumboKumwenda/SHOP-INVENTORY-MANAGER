@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | IT Help Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">IT Help Desk</a>
+      <nav class="nav">
+        <a href="user-dashboard.html" class="active">Dashboard</a>
+        <a href="report-problem.html">Report Problem</a>
+        <a href="tickets.html">My Tickets</a>
+        <a href="login.html" class="logout">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container page">
+      <div class="page-head">
+        <div>
+          <h1>Grace Banda</h1>
+          <p class="muted">Overview of your submitted support requests and active tickets.</p>
+        </div>
+        <a href="report-problem.html" class="btn btn-primary">+ Report New Problem</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="stat-label">Total Submitted</span><span class="stat-value">4</span></div>
+        <div class="stat"><span class="stat-label">Pending Review</span><span class="stat-value">2</span></div>
+        <div class="stat"><span class="stat-label">In Progress</span><span class="stat-value">1</span></div>
+        <div class="stat"><span class="stat-label">Resolved</span><span class="stat-value">1</span></div>
+      </div>
+      <div class="card">
+        <h2 class="card-title">My Tickets</h2>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Ticket ID</th>
+                <th>Subject</th>
+                <th>Category</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Date Submitted</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>HD-1001</strong></td>
+                <td>Laptop won't power on</td>
+                <td>Hardware</td>
+                <td><span class="prio prio-high">High</span></td>
+                <td><span class="badge badge-pending">Pending</span></td>
+                <td>2026-11-10</td>
+                <td class="actions">
+                  <a href="view-ticket.html" class="btn btn-sm btn-outline">View</a>
+                  <a href="edit-ticket.html" class="btn btn-sm btn-outline">Edit</a>
+                  <a href="user-dashboard.html" class="btn btn-sm btn-danger">Cancel</a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>HD-1004</strong></td>
+                <td>Printer paper jam</td>
+                <td>Printer</td>
+                <td><span class="prio prio-low">Low</span></td>
+                <td><span class="badge badge-resolved">Resolved</span></td>
+                <td>2026-11-05</td>
+                <td class="actions">
+                  <a href="view-ticket.html" class="btn btn-sm btn-outline">View</a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>HD-1006</strong></td>
+                <td>Email sync error</td>
+                <td>Software</td>
+                <td><span class="prio prio-medium">Medium</span></td>
+                <td><span class="badge badge-in-progress">In Progress</span></td>
+                <td>2026-11-06</td>
+                <td class="actions">
+                  <a href="view-ticket.html" class="btn btn-sm btn-outline">View</a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>HD-1008</strong></td>
+                <td>Request replacement keyboard</td>
+                <td>Other</td>
+                <td><span class="prio prio-low">Low</span></td>
+                <td><span class="badge badge-pending">Pending</span></td>
+                <td>2026-11-11</td>
+                <td class="actions">
+                  <a href="view-ticket.html" class="btn btn-sm btn-outline">View</a>
+                  <a href="edit-ticket.html" class="btn btn-sm btn-outline">Edit</a>
+                  <a href="user-dashboard.html" class="btn btn-sm btn-danger">Cancel</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
