@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Tickets | IT Help Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">IT Help Desk</a>
+      <nav class="nav">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="tickets.html" class="active">All Tickets</a>
+        <a href="categories.html">Categories</a>
+        <a href="login.html" class="logout">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container page">
+      <div class="page-head">
+        <div>
+          <h1>Support Ticket Directory</h1>
+          <p class="muted">Search and filter through all submitted IT service requests.</p>
+        </div>
+      </div>
+      <form action="tickets.html" method="get" class="card filters">
+        <input type="search" placeholder="Search by Ticket ID, Title, or Requester...">
+        <select aria-label="Filter by Status">
+          <option value="">All Statuses</option>
+          <option>Pending</option>
+          <option>Assigned</option>
+          <option>In Progress</option>
+          <option>Resolved</option>
+        </select>
+        <select aria-label="Filter by Category">
+          <option value="">All Categories</option>
+          <option>Hardware</option>
+          <option>Software</option>
+          <option>Network</option>
+          <option>Printer</option>
+          <option>Other</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Apply Filter</button>
+      </form>
+      <div class="card">
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Ticket ID</th>
+                <th>Requester</th>
+                <th>Summary</th>
+                <th>Category</th>
+                <th>Device</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Assigned Tech</th>
+                <th>Updated</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>HD-1001</strong></td>
+                <td>Grace Banda</td>
+                <td>Laptop won't power on</td>
+                <td>Hardware</td>
+                <td>Laptop <small>LT-0423</small></td>
+                <td><span class="prio prio-high">High</span></td>
+                <td><span class="badge badge-pending">Pending</span></td>
+                <td>—</td>
+                <td>2026-11-10</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>HD-1002</strong></td>
+                <td>John Phiri</td>
+                <td>Cannot install MS Office</td>
+                <td>Software</td>
+                <td>Desktop <small>DT-1187</small></td>
+                <td><span class="prio prio-medium">Medium</span></td>
+                <td><span class="badge badge-assigned">Assigned</span></td>
+                <td>Peter Mwale</td>
+                <td>2026-11-10</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>HD-1003</strong></td>
+                <td>Mary Chirwa</td>
+                <td>No Wi-Fi in Lab 3</td>
+                <td>Network</td>
+                <td>Access Point <small>NW-AP-03</small></td>
+                <td><span class="prio prio-critical">Critical</span></td>
+                <td><span class="badge badge-in-progress">In Progress</span></td>
+                <td>Esther Kumwenda</td>
+                <td>2026-11-11</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>HD-1004</strong></td>
+                <td>Grace Banda</td>
+                <td>Printer paper jam</td>
+                <td>Printer</td>
+                <td>Printer <small>PR-0056</small></td>
+                <td><span class="prio prio-low">Low</span></td>
+                <td><span class="badge badge-resolved">Resolved</span></td>
+                <td>Peter Mwale</td>
+                <td>2026-11-06</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>HD-1005</strong></td>
+                <td>James Tembo</td>
+                <td>Projector shows no signal</td>
+                <td>Hardware</td>
+                <td>Projector <small>PJ-0012</small></td>
+                <td><span class="prio prio-high">High</span></td>
+                <td><span class="badge badge-assigned">Assigned</span></td>
+                <td>Esther Kumwenda</td>
+                <td>2026-11-09</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>HD-1006</strong></td>
+                <td>Grace Banda</td>
+                <td>Email sync error</td>
+                <td>Software</td>
+                <td>Laptop <small>LT-0423</small></td>
+                <td><span class="prio prio-medium">Medium</span></td>
+                <td><span class="badge badge-in-progress">In Progress</span></td>
+                <td>Peter Mwale</td>
+                <td>2026-11-11</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>HD-1007</strong></td>
+                <td>Ruth Nyirenda</td>
+                <td>Slow internet in Admin block</td>
+                <td>Network</td>
+                <td>Desktop <small>DT-0921</small></td>
+                <td><span class="prio prio-medium">Medium</span></td>
+                <td><span class="badge badge-resolved">Resolved</span></td>
+                <td>Esther Kumwenda</td>
+                <td>2026-11-04</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>HD-1008</strong></td>
+                <td>Grace Banda</td>
+                <td>Request replacement keyboard</td>
+                <td>Other</td>
+                <td>Desktop <small>DT-1190</small></td>
+                <td><span class="prio prio-low">Low</span></td>
+                <td><span class="badge badge-pending">Pending</span></td>
+                <td>—</td>
+                <td>2026-11-11</td>
+                <td class="actions"><a href="view-ticket.html" class="btn btn-sm btn-outline">View Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
