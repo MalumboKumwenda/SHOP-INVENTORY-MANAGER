@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | IT Help Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">IT Help Desk</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html" class="btn btn-primary btn-sm active">Register</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="auth">
+      <div class="card auth-card wide">
+        <h1>Create Account</h1>
+        <p class="muted">Register to report issues and track support tickets</p>
+        <form action="login.html" method="get" class="form">
+          <div class="grid-2">
+            <div class="field">
+              <label for="fn">Full Name</label>
+              <input id="fn" type="text" placeholder="e.g. Grace Banda" required>
+            </div>
+            <div class="field">
+              <label for="em">Institutional Email</label>
+              <input id="em" type="email" placeholder="e.g. g.banda@school.mw" required>
+            </div>
+            <div class="field">
+              <label for="dep">Department / Faculty</label>
+              <select id="dep" required>
+                <option value="">Select Department...</option>
+                <option>Computer Science</option>
+                <option>Administration</option>
+                <option>Finance & Accounting</option>
+                <option>Library & Learning Resources</option>
+                <option>Engineering</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="rl">Account Type</label>
+              <select id="rl" required>
+                <option>Staff / Faculty</option>
+                <option>Student</option>
+                <option>Lab Assistant</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="p1">Password</label>
+              <input id="p1" type="password" required placeholder="Minimum 8 characters">
+            </div>
+            <div class="field">
+              <label for="p2">Confirm Password</label>
+              <input id="p2" type="password" required placeholder="Re-enter password">
+            </div>
+          </div>
+          <label class="check">
+            <input type="checkbox" required checked>
+            I agree to the IT Acceptable Use Policy
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Complete Registration</button>
+        </form>
+        <p class="auth-foot">Already registered? <a href="login.html">Sign in here</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
